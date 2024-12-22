@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <title>Personalize sua Ferrari</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./image/car_ferrari.png" type="image/png">
+    <style>
+        body {
+            color: #bbbbbb;
+            background: #333333;
+        }
+
+        a {
+            color: #08f;
+        }
+
+        .colorPicker {
+            display: inline-block;
+            margin: 0 10px
+        }
+    </style>
+</head>
+
+<body>
+    <div id="info">
+        <span class="colorPicker"><input id="body-color" type="color" value="#ff0000"></input><br />Lataria</span>
+        <span class="colorPicker"><input id="details-color" type="color" value="#ffffff"></input><br />Detalhes</span>
+        <span class="colorPicker"><input id="glass-color" type="color" value="#ffffff"></input><br />Vidros</span>
+    </div>
+
+    <div id="container"></div>
+
+    <script type="importmap">
+        {
+            "imports": {
+              "three": "https://cdn.jsdelivr.net/npm/three@v0.149.0/build/three.module.js",
+              "three/addons/": "https://cdn.jsdelivr.net/npm/three@v0.149.0/examples/jsm/"
+            }
+          }
+		</script>
+
+    <script type="module" src="./script.js"></script>
+
+</body>
+
+</html>
