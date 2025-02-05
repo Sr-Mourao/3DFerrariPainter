@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/blogcd/public_html/testes
+    - /bin/cp -R images $DEPLOYPATH
